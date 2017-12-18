@@ -9,18 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "Hello there"
-        return cell
-    }
+   
     
 
     @IBOutlet weak var tableview1: UITableView!
+    
+    var emojis = ["😀","😃","😄","🤪","🧐","😎","🤓","🤩","😜","😚","😍","🤬","🤥"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return emojis.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print(indexPath.row)
+        let cell = UITableViewCell()
+        cell.textLabel?.text = emojis[indexPath.row]
+        return cell
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
        

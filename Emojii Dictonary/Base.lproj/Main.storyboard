@@ -39,5 +39,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="sQb-t1-ZEN">
+            <objects>
+                <viewController id="eMn-Ps-mGg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Xw-q6-Max">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fON-qW-pWE">
+                                <rect key="frame" x="133.5" y="70" width="108" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a smiling cat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvd-b5-bq0">
+                                <rect key="frame" x="112.5" y="249.5" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fON-qW-pWE" firstAttribute="top" secondItem="YyU-1I-L5R" secondAttribute="top" constant="50" id="7kd-SJ-keO"/>
+                            <constraint firstItem="Yvd-b5-bq0" firstAttribute="centerX" secondItem="1Xw-q6-Max" secondAttribute="centerX" id="GCy-Ek-8Qd"/>
+                            <constraint firstItem="fON-qW-pWE" firstAttribute="centerX" secondItem="1Xw-q6-Max" secondAttribute="centerX" id="hfD-WL-utu"/>
+                            <constraint firstItem="Yvd-b5-bq0" firstAttribute="top" secondItem="fON-qW-pWE" secondAttribute="bottom" constant="60" id="xqu-Fg-UlQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YyU-1I-L5R"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9iq-jc-jpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727.20000000000005" y="-117.39130434782609"/>
+        </scene>
     </scenes>
 </document>
